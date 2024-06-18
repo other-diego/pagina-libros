@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfonsina Mesa</title>
+    <link rel="stylesheet" href="./Css/normalize.css" />
+    <link rel="stylesheet" href="./Css/Libros.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-nav">
+      <div class="container header">
+        <a href="./index.html" class="title"><h2>Alfonsina Mesa</h2></a>
+        <nav class="navbar">
+          <a href="#">Inicio</a>
+          <a href="#">Sobre mi</a>
+          <a href="#">Mis libros</a>
+          <a href="#">Testimonio</a>
+          <a href="#">Contactame</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="informacion-libro" class="container">
+      <div class="book">
+        <img id="libro-imagen" src="" alt="Portada del libro" />
+        <div class="description">
+          <h2 id="libro-nombre"></h2>
+          <span id="libro-subtitulo"></span>
+          <p id="libro-descripcion"></p>
+          <p id="sin-stock" style="display: none"></p>
+          <a id="libro-stock" href="#" target="_blank" style="display: none"
+            >Comprar</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <div class="container contact">
+        <div class="footer-name">
+          <h5>Alfonsina Mesa</h5>
+          <span>Escritora Floridense</span>
+          <hr />
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/alfonsina.mesa.52" target="_blank"
+            ><img src="./images/face.svg" id="icon-face"
+          /></a>
+          <a
+            href="https://twitter.com/Alfo_Mesa_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="_blank"
+            ><img src="./images/twitter.svg" id="icon-twitter"
+          /></a>
+          <a href="https://www.instagram.com/alfo_mesa_/" target="_blank"
+            ><img src="./images/instagram.svg" id="icon-insta"
+          /></a>
+          <a href="mailto:alfomaria31@hotmail.com"
+            ><img src="./images/mail-close.svg" class="mail" id="icon-mail"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <div class="created">
+      <p>&copy; 2023. Todos los derechos reservados</p>
+    </div>
+    <script src="./Js/main.js"></script>
+    <script>
+      // Llamar a la función para obtener la información del libro al cargar la página
+      obtenerInfoLibro();
+    </script>
+  </body>
+</html>

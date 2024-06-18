@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alfonsina Mesa</title>
+    <link rel="stylesheet" href="./Css/normalize.css" />
+    <link rel="stylesheet" href="./Css/styles.css" />
+    <link rel="icon" type="image/jpg" href="/images/icons8-literatura-32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Hola soy Alfonsina Mesa, soy escritora uruguaya y te invito a que visites mi pagina web.  "
+    />
+    <meta name="keywords" content="Escritora, Libros, Lectura" />
+    <meta name="author" content="Alfonsina Mesa" />
+  </head>
+  <body>
+    <header class="header-nav" id="nav">
+      <div class="container header">
+        <h2>Alfonsina Mesa</h2>
+        <nav class="navbar">
+          <a href="#inicio">Inicio</a>
+          <a href="#about-me">Sobre mi</a>
+          <a href="#books">Mis libros</a>
+          <a href="#entrevista">Entrevista</a>
+          <a href="#contact">Contactame</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="inicio">
+      <div class="container center">
+        <img
+          src="./images/alfa.jpeg"
+          alt="Imagen-Alfonsina"
+          class="imagen-alfo"
+        />
+        <h1>Alfonsina Mesa</h1>
+        <span>Escritora Uruguaya</span>
+      </div>
+    </section>
+    <section class="section-02 container" id="about-me">
+      <div class="container about-me">
+        <div class="information">
+          <h3>Holaaa, ¡Gracias por visitar mi página!</h3>
+          <p>
+            Me llamo Alfonsina Mesa, nací el 8 de octubre de 2005 en Florida,
+            Uruguay. Desde muy chica siempre me gustó la escritura, pasaba horas
+            en la computadora escribiendole recetas de comida a mi madre para
+            que las hiciera. Al principio no me gustaba la lectura, cuando tenía
+            que leer me ponía a llorar. Pero eso cambió radicalmente a los 10
+            años cuando mi papá compró un libro que hizo que mi gusto por leer
+            terminara en una pasión A los 12 años decidí comenzar a escribir mi
+            primer libro sin saber cómo hacerlo, pero lo logré gracias a la
+            imaginación. Algunos premios que recibí: Premios Inju en la
+            categoría Arte y cultura del departamento. Reconocida como una de
+            las ocho mujeres más destacadas a nivel departamental.
+            Reconocimiento por la junta departamental de Florida.
+          </p>
+        </div>
+        <img src="./images/alfo.jpeg" alt="foto de alfonsina" />
+      </div>
+    </section>
+    <section class="section-03 container" id="books">
+      <h3>Mis Libros</h3>
+      <main id="portadas" class="books">
+        <!-- Aquí colocarás las portadas de los libros como enlaces -->
+        <a href="./Libros.html" onclick="mostrarInfoLibro(1)"
+          ><img src="./images/aquien.jpeg" alt="A quien Elijo"
+        /></a>
+        <a href="./Libros.html" onclick="mostrarInfoLibro(2)"
+          ><img src="./images/campamento.jpeg" alt="Un Misterioso Campamento"
+        /></a>
+        <a href="./Libros.html" onclick="mostrarInfoLibro(3)"
+          ><img src="./images/intercambio.jpeg" alt="El intercambio"
+        /></a>
+        <a href="./Libros.html" onclick="mostrarInfoLibro(4)"
+          ><img src="./images/supuestas.jpeg" alt="Supuestas Amistades"
+        /></a>
+      </main>
+    </section>
+    <section class="section-04 container" id="entrevista">
+      <h4>Entrevista</h4>
+      <div class="interview contenedor-test">
+        <video src="./videos/entrevista.mp4" controls></video>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <div class="container contact">
+        <div class="footer-name">
+          <h5>Alfonsina Mesa</h5>
+          <span>Escritora Floridense</span>
+          <hr />
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/alfonsina.mesa.52" target="_blank"
+            ><img src="./images/face.svg" id="icon-face" alt="icono facebook"
+          /></a>
+          <a
+            href="https://twitter.com/Alfo_Mesa_?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            target="_blank"
+            ><img
+              src="./images/twitter.svg"
+              id="icon-twitter"
+              alt="icono twitter"
+          /></a>
+          <a href="https://www.instagram.com/alfo_mesa_/" target="_blank"
+            ><img
+              src="./images/instagram.svg"
+              id="icon-insta"
+              alt="icono instagram"
+          /></a>
+          <a href="mailto:alfomaria31@hotmail.com"
+            ><img
+              src="./images/mail-close.svg"
+              class="mail"
+              id="icon-mail"
+              alt="icono mail"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <div class="created">
+      <p>&copy; 2023. Todos los derechos reservados</p>
+    </div>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>

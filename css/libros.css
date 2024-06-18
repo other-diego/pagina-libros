@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kay Pho Du", serif;
+}
+html {
+  scroll-behavior: smooth; /* Para que el scroll sea suave (animado) */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #292828;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #757575;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-nav {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  color: #fff;
+  transition: all 0.2s ease;
+  font-size: 1.3rem;
+  background-color: #000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background-color: #fff;
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.book img {
+  height: 450px;
+  margin-top: 3rem;
+}
+
+.description {
+  margin-top: 3rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kay Pho Du", serif;
+}
+
+.description h2 {
+  font-family: "Kay Pho Du", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 300px;
+  text-align: center;
+}
+
+.description span {
+  font-family: "Kay Pho Du", serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0.6rem 0 1rem 0;
+  width: 300px;
+  text-align: center;
+}
+
+.description p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.libro-stock {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-top: 2.5rem;
+  background-color: #bd1919;
+  padding: 1rem 5rem;
+  border-radius: 35px;
+  font-weight: 800;
+  transition: all 0.4s ease-out;
+}
+
+.libro-stock:hover {
+  border: 3px solid #bd1919;
+  background: none;
+  color: #000;
+}
+
+.libro-sin-stock {
+  background-color: #f7cbcb;
+  color: #bd1919;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  cursor: default;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+}
+/* Contact */
+
+.footer {
+  background-color: #4b4b4b;
+  color: #fff;
+  padding: 2rem 0 2rem 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  text-align: center;
+}
+.footer-name {
+  width: 100%;
+}
+
+.contact h5 {
+  font-size: 2.5rem;
+}
+
+.contact hr {
+  margin-top: 0.7rem;
+  height: 0.1rem;
+  background-color: #fff;
+}
+
+.contact span {
+  font-size: 1.3rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-face:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.created {
+  text-align: center;
+  color: #ffffff;
+  background-color: #272727;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Responsive */
+
+@media (max-width: 890px) {
+  .navbar {
+    display: none;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .book {
+    padding-top: 4rem;
+    padding-bottom: 35rem;
+    row-gap: 5rem;
+  }
+}
+
+@media (max-width: 837px) {
+  .book {
+    padding-top: 4rem;
+    padding-bottom: 65rem;
+    row-gap: 0.1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .book img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 350px) {
+  .book img {
+    height: 300px;
+  }
+
+  .description {
+    width: 200px;
+  }
+}
